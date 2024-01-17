@@ -1,12 +1,12 @@
 #include "monty.h"
 /**
- * f_mod - computes rest of division of second
+ * opc_mod - computes rest of division of second
  * top element of the stack by the top element of the stack
  * @head: stack head
  * @counter: line_number
  * Return: no return
 */
-void f_mod(stack_t **head, unsigned int counter)
+void opc_mod(stack_t **head, unsigned int counter)
 {
 	stack_t *h;
 	int len = 0, aux;
