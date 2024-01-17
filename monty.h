@@ -82,5 +82,4 @@ void addqueue(stack_t **head, int n);
 void opc_queue(stack_t **head, unsigned int counter);
 void opc_stack(stack_t **head, unsigned int counter);
 
-#endif
-
+#endif /* MONTY_H */

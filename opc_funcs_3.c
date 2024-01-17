@@ -48,7 +48,7 @@ void opc_push(stack_t **head, unsigned int counter)
  * @counter: line_number
  * Return: no return
  */
-void f_pop(stack_t **head, unsigned int counter)
+void opc_pop(stack_t **head, unsigned int counter)
 {
 	stack_t *h;
 
