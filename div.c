@@ -1,7 +1,7 @@
 #include "monty.h"
 /**
- * opc_div - divides top two elements of the stack.
- * @head: stack head
+ * opc_div - divide the top two elements of the stack.
+ * @head: shows stack head
  * @counter: line_number
  * Return: no return
 */
