@@ -10,9 +10,9 @@ bus_t bus = {NULL, NULL, NULL, 0};
  */
 int main(int argc, char *argv[])
 {
-	char *buffer = malloc(2048);
+	char *buffer = NULL;
 	FILE *file;
-	/* size_t size = 0; */
+	size_t size = 0;
 	ssize_t read_line = 1;
 	stack_t *stack = NULL;
 	unsigned int counter = 0;
@@ -32,12 +32,11 @@ int main(int argc, char *argv[])
 	while (read_line > 0)
 	{
 		buffer = NULL;
-		if (fgets(buffer, sizeof(buffer), file) == NULL)
-			break;
+		read_line = getline(&buffer, &size, file);
 		bus.content = buffer;
 		counter++;
 
-		if (strlen(buffer) > 0)
+		if (read_line > 0)
 		{
 			execute(buffer, &stack, counter, file);
 		}
