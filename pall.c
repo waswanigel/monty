@@ -1,9 +1,9 @@
 #include "monty.h"
 /**
- * opc_pall - prints stack
+ * opc_pall - prints all values ofstack
  * @head: stack head
- * @counter: no used
- * Return: no return
+ * @counter: unused
+ * Return: void
 */
 void opc_pall(stack_t **head, unsigned int counter)
 {

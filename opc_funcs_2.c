@@ -1,10 +1,10 @@
 #include "monty.h"
 
 /**
- * opc_swap - adds the top two elements of the stack.
+ * opc_swap - adds valuew of top two elements of the stack
  * @head: stack head
- * @counter: line_number
- * Return: no return
+ * @counter: line position
+ * Return: void
  */
 void opc_swap(stack_t **head, unsigned int counter)
 {
@@ -32,10 +32,10 @@ void opc_swap(stack_t **head, unsigned int counter)
 }
 
 /**
- * opc_sub- sustration
+ * opc_sub- subtract value
  * @head: stack head
- * @counter: line_number
- * Return: no return
+ * @counter: line position
+ * Return: void
  */
 void opc_sub(stack_t **head, unsigned int counter)
 {
@@ -61,10 +61,10 @@ void opc_sub(stack_t **head, unsigned int counter)
 }
 
 /**
- * opc_stack - prints the top
+ * opc_stack - prints the top value of a stack
  * @head: stack head
- * @counter: line_number
- * Return: no return
+ * @counter: line position
+ * Return: void
  */
 void opc_stack(stack_t **head, unsigned int counter)
 {
@@ -74,10 +74,10 @@ void opc_stack(stack_t **head, unsigned int counter)
 }
 
 /**
- * opc_queue - prints the top
+ * opc_queue - prints the top value of queue
  * @head: stack head
- * @counter: line_number
- * Return: no return
+ * @counter: lines
+ * Return: void
  */
 void opc_queue(stack_t **head, unsigned int counter)
 {
@@ -87,10 +87,10 @@ void opc_queue(stack_t **head, unsigned int counter)
 }
 
 /**
- * addqueue - add node to the tail stack
- * @n: new_value
- * @head: head of the stack
- * Return: no return
+ * addqueue - add node at the tail
+ * @n: new value for node
+ * @head: head of stack
+ * Return: void
  */
 void addqueue(stack_t **head, int n)
 {

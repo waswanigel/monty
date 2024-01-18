@@ -1,10 +1,10 @@
 #include "monty.h"
 
 /**
- * opc_push - add node to the stack
+ * opc_push - add node to the stack linked list
  * @head: stack head
- * @counter: line_number
- * Return: no return
+ * @counter: linenumber counter
+ * Return: void
  */
 void opc_push(stack_t **head, unsigned int counter)
 {
@@ -43,10 +43,10 @@ void opc_push(stack_t **head, unsigned int counter)
 }
 
 /**
- * opc_pop - prints the top
+ * opc_pop - removes top node in a stack
  * @head: stack head
- * @counter: line_number
- * Return: no return
+ * @counter: line counter
+ * Return: void
  */
 void opc_pop(stack_t **head, unsigned int counter)
 {
@@ -66,10 +66,10 @@ void opc_pop(stack_t **head, unsigned int counter)
 }
 
 /**
- * opc_pint - prints the top
+ * opc_pint - prints the top value of stack
  * @head: stack head
- * @counter: line_number
- * Return: no return
+ * @counter: counter for line
+ * Return: void
  */
 void opc_pint(stack_t **head, unsigned int counter)
 {
@@ -85,11 +85,10 @@ void opc_pint(stack_t **head, unsigned int counter)
 }
 
 /**
- * opc_pchar - prints the char at the top of the stack,
- * followed by a new line
+ * opc_pchar - prints the char at the top of the stack Linked list
  * @head: stack head
- * @counter: line_number
- * Return: no return
+ * @counter: count linenumber
+ * Return: void
  */
 void opc_pchar(stack_t **head, unsigned int counter)
 {

@@ -1,10 +1,9 @@
 #include "monty.h"
 /**
- * opc_pstr - prints string starting at top of stack,
- * followed by a new
+ * opc_pstr - prints string from top of stack in a L_list followed by newline
  * @head: stack head
- * @counter: line_number
- * Return: no return
+ * @counter: line counter
+ * Return: void
 */
 void opc_pstr(stack_t **head, unsigned int counter)
 {

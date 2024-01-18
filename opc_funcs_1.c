@@ -3,10 +3,10 @@
 /**
  * execute - executes the opcode
  * @stack: head linked list - stack
- * @counter: line_counter
+ * @counter: line position
  * @file: poiner to monty file
- * @content: line content
- * Return: no return
+ * @content: content
+ * Return: void
  */
 int execute(char *content, stack_t **stack, unsigned int counter, FILE *file)
 {
@@ -56,10 +56,10 @@ int execute(char *content, stack_t **stack, unsigned int counter, FILE *file)
 }
 
 /**
- * opc_mul - multiplies the top two elements of the stack.
+ * opc_mul - multiplies the values of top two elements of the stack.
  * @head: stack head
- * @counter: line_number
- * Return: no return
+ * @counter: line position
+ * Return: void
  */
 void opc_mul(stack_t **head, unsigned int counter)
 {
@@ -87,10 +87,10 @@ void opc_mul(stack_t **head, unsigned int counter)
 	free(h);
 }
 /**
- * opc_nop- nothing
+ * opc_nop- does nothing
  * @head: stack head
- * @counter: line_number
- * Return: no return
+ * @counter: line position
+ * Return: void
  */
 void opc_nop(stack_t **head, unsigned int counter)
 {
@@ -99,10 +99,10 @@ void opc_nop(stack_t **head, unsigned int counter)
 }
 
 /**
- * opc_rotl- rotates the stack to the top
+ * opc_rotl- rotates the stack up
  * @head: stack head
- * @counter: line_number
- * Return: no return
+ * @counter: line position
+ * Return: void
  */
 void opc_rotl(stack_t **head,  __attribute__((unused)) unsigned int counter)
 {
@@ -125,10 +125,10 @@ void opc_rotl(stack_t **head,  __attribute__((unused)) unsigned int counter)
 }
 
 /**
- * opc_rotr- rotates the stack to the bottom
+ * opc_rotr- rotates the stack down
  * @head: stack head
- * @counter: line_number
- * Return: no return
+ * @counter: line position
+ * Return: void
  */
 void opc_rotr(stack_t **head, __attribute__((unused)) unsigned int counter)
 {
