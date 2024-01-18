@@ -10,7 +10,7 @@ bus_t bus = {NULL, NULL, NULL, 0};
  */
 int main(int argc, char *argv[])
 {
-	char *buffer;
+	char *buffer = malloc(2048);
 	FILE *file;
 	/* size_t size = 0; */
 	ssize_t read_line = 1;
@@ -41,8 +41,8 @@ int main(int argc, char *argv[])
 		{
 			execute(buffer, &stack, counter, file);
 		}
-		free(buffer);
 	}
+	free(buffer);
 	free_stack(stack);
 	fclose(file);
 	return (0);
