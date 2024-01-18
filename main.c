@@ -1,15 +1,7 @@
-<<<<<<< HEAD
-=======
-#include "monty.h"
->>>>>>> 95aa80a2711f69029bcf3c0a11e447a6d525bc4c
 #define _POSIX_C_SOURCE 200809L
 #include "monty.h"
 
 bus_t bus = {NULL, NULL, NULL, 0};
-<<<<<<< HEAD
-=======
-
->>>>>>> 95aa80a2711f69029bcf3c0a11e447a6d525bc4c
 /**
 * main - monty code interpreter
 * @argc: number of arguments
@@ -51,5 +43,5 @@ int main(int argc, char *argv[])
 	}
 	free_stack(stack);
 	fclose(file);
-return (0);
+	return (0);
 }
