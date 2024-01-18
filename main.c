@@ -1,7 +1,6 @@
 #include "monty.h"
+#include<stdio.h>
 #define _POSIX_C_SOURCE 200809L
-
-
 
 /**
  * main - interprets monty code
