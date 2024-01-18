@@ -1,11 +1,8 @@
 #include "monty.h"
 /**
-<<<<<<< HEAD
  * opc_mod - computes rest of division of the second
  * top element of the stack by the top element of the stack
-=======
  * opc_mod - computes modulus
->>>>>>> b639cf6b702d42430f3aa324817814c12a8cd88f
  * @head: stack head
  * @counter: line position
  * Return: void
