@@ -1,10 +1,9 @@
 #include "monty.h"
 /**
- * opc_mod - computes rest of division of second
- * top element of the stack by the top element of the stack
+ * opc_mod - computes modulus
  * @head: stack head
- * @counter: line_number
- * Return: no return
+ * @counter: line position
+ * Return: void
 */
 void opc_mod(stack_t **head, unsigned int counter)
 {
