@@ -1,16 +1,13 @@
-#include "monty.h"
-#include<stdio.h>
 #define _POSIX_C_SOURCE 200809L
+#include "monty.h"
 
+bus_t bus = {NULL, NULL, NULL, 0};
 /**
- * main - interprets monty code
- * @argc: number of arguments
- * @argv: monty file location
- * main - entry point for monty code interpreter
- * @argc: argument count
- * @argv: argument vector
- * Return: 0 on success
- */
+* main - monty code interpreter
+* @argc: number of arguments
+* @argv: monty file location
+* Return: 0 on success
+*/
 int main(int argc, char *argv[])
 {
 	char *buffer = NULL;
@@ -38,14 +35,13 @@ int main(int argc, char *argv[])
 		read_line = getline(&buffer, &size, file);
 		bus.content = buffer;
 		counter++;
-
 		if (read_line > 0)
 		{
 			execute(buffer, &stack, counter, file);
 		}
+		free(buffer);
 	}
-	free(buffer);
 	free_stack(stack);
 	fclose(file);
-	return (0);
+return (0);
 }
