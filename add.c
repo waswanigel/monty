@@ -1,8 +1,8 @@
 #include "monty.h"
 /**
  * opc_add - adds top two elements of stack.
- * @head: stack head
- * @counter: line_number
+ * @head: shows stack head
+ * @counter: returns line_number
  * Return: no return
 */
 void opc_add(stack_t **head, unsigned int counter)
