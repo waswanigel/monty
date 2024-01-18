@@ -1,6 +1,6 @@
 #include "monty.h"
 /**
- * opc_mod - computes rest of division of second
+ * opc_mod - computes rest of division of the second
  * top element of the stack by the top element of the stack
  * @head: stack head
  * @counter: line_number
