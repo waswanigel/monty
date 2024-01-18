@@ -1,5 +1,9 @@
 #include "monty.h"
+<<<<<<< HEAD
 #define _POSIX_C_SOURCE 200809L
+=======
+bus_t bus = {NULL, NULL, NULL, 0};
+>>>>>>> d48acef0b96aac2fb89b9f54ae44dab459c98a52
 
 /**
  * main - interprets monty code
@@ -8,7 +12,10 @@
  * main - entry point for monty code interpreter
  * @argc: argument count
  * @argv: argument vector
+<<<<<<< HEAD
  * b639cf6b702d42430f3aa324817814c12a8cd88f
+=======
+>>>>>>> d48acef0b96aac2fb89b9f54ae44dab459c98a52
  * Return: 0 on success
  */
 int main(int argc, char *argv[])

@@ -10,7 +10,7 @@
 #include <ctype.h>
 
 /**
- * struct stack_s - shows doubly linked list representation of a stack (or queue)
+ * struct stack_s - shows doubly linked list rep of a stack (or queue)
  * @n: integer
  * @prev: points to previous element of the stack (or queue)
  * @next: points to next element of the stack (or queue)
